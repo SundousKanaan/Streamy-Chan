@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") -%>
+
+    <body>
+        <header>
+            <section>
+                <h1>Streamy-Chan</h1>
+                <form>
+                    <input id="videoLinkInput" type="text" name="url" id="url" placeholder="link..." required />
+                    <button type="button">⤴️</button>
+                </form>
+                <button>⏸️</button>
+                <button>🔗</button>
+                <a href="/">🔚</a>
+            </section>
+
+            <div>
+                <div id="videoFrame"></div>
+                <button><svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%">
+                        <path class="ytp-large-play-button-bg"
+                            d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                            fill="#f00"></path>
+                        <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+                    </svg></button>
+                <span></span>
+            </div>
+        </header>
+
+        <main class="room">
+            <section>
+                <h2>Choose your username</h2>
+                <form>
+                    <input type="text" id="username-input" placeholder="Enter your username"
+                        pattern="^(?!\s)(?!.*\s$).{1,19}$" minlength="1" maxlength="15" required />
+                    <p></p>
+                    <h2>Choose your avatar</h2>
+                    <ul>
+                        <li>
+                            <input id="option0" type="radio" name="option" value="option0" required checked>
+                            <label for="option0" data-avatar="./images/user-avatar.svg">
+                            </label>
+                        </li>
+                        <li>
+                            <input id="option1" type="radio" name="option" value="option1">
+                            <label for="option1" data-avatar="./images/girl-avatar-1.svg">
+                            </label>
+                        </li>
+                        <li>
+                            <input id="option2" type="radio" name="option" value="option2">
+                            <label for="option2" data-avatar="./images/boy-avatar-1.svg">
+                            </label>
+                        </li>
+                        <li>
+                            <input id="option3" type="radio" name="option" value="option3">
+                            <label for="option3" data-avatar="./images/girl-avatar-2.svg">
+                            </label>
+                        </li>
+                        <li>
+                            <input id="option4" type="radio" name="option" value="option4">
+                            <label for="option4" data-avatar="./images/boy-avatar-2.svg">
+                            </label>
+                        </li>
+                        <li>
+                            <input id="option5" type="radio" name="option" value="option5">
+                            <label for="option5" data-avatar="./images/batman-avatar.svg">
+                            </label>
+                        </li>
+                        <li>
+                            <input id="option6" type="radio" name="option" value="option6">
+                            <label for="option6" data-avatar="./images/magician-avatar.svg">
+                            </label>
+                        </li>
+                        <li>
+                            <input id="option7" type="radio" name="option" value="option7">
+                            <label for="option7" data-avatar="./images/cacti-avatar.svg">
+                            </label>
+                        </li>
+                        <li>
+                            <input id="option8" type="radio" name="option" value="option8">
+                            <label for="option8" data-avatar="./images/lazybones-avatar.svg">
+                            </label>
+                        </li>
+                        <li>
+                            <input id="option9" type="radio" name="option" value="option9">
+                            <label for="option9" data-avatar="./images/emoji-avatar.svg">
+                            </label>
+                        </li>
+                    </ul>
+                </form>
+                <button>Start chatting</button>
+            </section>
+
+            <div></div>
+
+            <!-- writing note -->
+            <p></p>
+
+            <section>
+                <!-- chat loading -->
+                <div>
+                    <span>
+                        <div>
+                            <img src="./images/streamy-logo.svg" alt="Streamy-chan app logo">
+                        </div>
+                        <div></div>
+                    </span>
+                </div>
+
+                <!-- disconnected -->
+                <div>
+
+                </div>
+
+                <!-- messages -->
+                <ul data-room=" <%- roomID %> ">
+                <!-- <li class="time">
+                    <div>
+                        <img src="" alt="asc">
+                    </div>
+                    <p>asasx</p>
+                </li> -->
+                </ul>
+
+                <span>
+                    <form>
+                        <input type="text" name="message" id="message-input" placeholder="Chatting ..." required />
+                        <button type="submit" id="message-button"></button>
+                    </form>
+
+                    <button>GIF</button>
+                </span>
+
+                <!-- gifs search -->
+                <form>
+                    <ul>
+
+                    </ul>
+                    <label for="">
+                        <input type="text" name="gifsearch" id="gifsearch" placeholder="search gifs ...">
+                        <button id="gif-button"></button>
+                    </label>
+                </form>
+
+            </section>
+        </main>
+
+        <%- include("./partials/footer.ejs") -%>
+            <script src="./script/scriptroom.js"></script>
+            <script src="https://www.youtube.com/iframe_api"></script>
+    </body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") -%>
+
+    <body>
+        <main class="loggin">
+            <section>
+                <h2>Choose your room name</h2>
+                <form>
+                    <input type="text" id="roomname-input" placeholder="Enter your room name" required />
+                </form>
+                <a href="">Start room</a>
+                <p>The room is all open. Choose another room name</p>
+                <p>test versie</p>
+                <button>Check room</button>
+            </section>
+        </main>
+
+        <%- include("./partials/footer.ejs") -%>
+
+        <script src="/socket.io/socket.io.js"></script>
+  <script src="./script/scriptIndex.js"></script>
+
+    </body>
+
+</html>
