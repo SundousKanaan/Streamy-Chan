@@ -559,7 +559,7 @@ socket.on("gifmessage", (msg) => {
 - Users can get a message when the link of the video is not good ✅
 - Users are notified that someone has been involved ✅
 - Users can share GIFs ✅
-- 
+
 ### Would have but not right now
 - wachtwoord de room maken
 - Gebruikers kunnen stickers delen
@@ -995,7 +995,7 @@ socket.on("roomAdmin", (roomData) => {
 
 <img src="./readme-images/connected.png" alt="connected foto">
 
-### Online (error)
+### Offline (error)
 
 <img src="./readme-images/disconnected.png" alt="disconnected foto">
 
