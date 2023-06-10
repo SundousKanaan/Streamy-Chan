@@ -39,7 +39,7 @@ Experience a unique online platform where you can create your own chat rooms and
 ## 👁️ Demo Link! 
  
 * live demo door [railway.app](https://rtw-groep-production.up.railway.app/)
-<!-- * live demo door [aptable.io](https://streamy-chan.adaptable.app) -->
+* live demo door [aptable.io](https://streamy-chan.adaptable.app)
 
 ---
 
