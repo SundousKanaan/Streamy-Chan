@@ -47,7 +47,7 @@ Experience a unique online platform where you can create your own chat rooms and
 Streamy-Chan is an app where the users can open their own room and chat with their friends and watch something on youtube or websites by forming a link.
 
 
-<img src="./readme-images/Streamy-Chan.png" alt="Streamy-Chan app view">
+<img src="./readme-images/admin-view.png" alt="Streamy-Chan app view">
 
 ---
 
